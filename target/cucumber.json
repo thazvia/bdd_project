@@ -1,0 +1,128 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2529625000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.beforeRun()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User should be able to login valid credentials and open new account",
+        "description": "",
+        "id": "login-to-tecfios-loginpage-with-data-extracted-from-database;user-should-be-able-to-login-valid-credentials-and-open-new-account",
+        "after": [
+          {
+            "result": {
+              "duration": 652415000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1909318400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the Techfios login page",
+            "match": {
+              "location": "LoginStepDefinition.User_is_on_the_Techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3650790200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"username\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_from_mysql_database(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3109708400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters \"password\" from mysql database",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_from_mysql_database(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5200721000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on Signin button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_Signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 190920800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should land on Dashboard page",
+            "match": {
+              "location": "LoginStepDefinition.user_should_land_on_Dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@DBScenario1"
+          }
+        ]
+      }
+    ],
+    "name": "login to tecfios loginpage with data extracted from database",
+    "description": "",
+    "id": "login-to-tecfios-loginpage-with-data-extracted-from-database",
+    "keyword": "Feature",
+    "uri": "features/loginWithDataFromDatabase.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@DBLoginFeature"
+      }
+    ]
+  }
+]
